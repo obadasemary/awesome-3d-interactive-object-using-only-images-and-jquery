@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="demo2 no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Create a 3D interactive object using only images and jQuery</title>
+		<meta name="description" content="Today I have created an easy-to-use plugin that lets you create a 3D interactive object using multiple images as frames allowing your users to manipulate the object as they like." />
+		<meta name="keywords" content="3d jquery, image 3d, jquery rotate, 3d interactive object, jquery 3D rotate" />
+		<meta name="author" content="Author for Onextrapixel" />
+		<link rel="shortcut icon" id="favicon" href="../file/favicon.gif"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		
+		<!-- Edit Below -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	    <script type="text/javascript" src="js/jquery.interactive_3d.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	    <link rel="stylesheet" type="text/css" href="css/elusive-webfont.css" />
+	    <script src="../file/js/modernizr.js"></script>
+	</head>
+	<body class="demo4">
+	
+	<div class="nav-top clearfix">
+		<span class="right"><a class="nav-icon icon-th" href="http://www.onextrapixel.com/category/tutorials/"><span>View all Tutorials</span></a></span>
+		<span class="right"><a class="nav-icon icon-left" href="#"><span>Back to Tutorial Article</span></a></span>
+	</div>
+	
+	<div class="main">
+    <div class="page_container">
+      <div id="3d" class="interactive_3d">
+        <img src="photo/frame_1.png">
+        <div class="title">
+          <h1>Interactive 3D: <small>Autoplay</small></h1>
+          <p>Create a 3D interactive object using only images and one simple JS call</p>
+          <div class="header">
+        		<div class="menu">
+          		<a href="index.html">Demo 1</a>
+          		<a href="index2.html">Demo 2</a>
+          		<a href="index3.html">Demo 3</a>
+          		<a class="active" href="index4.html">Demo 4</a>
+          	</div>
+        	</div>
+        	<p class="direction"><i class="customicon-move"></i> Please move me!</p>
+        </div>
+      </div>
+    </div>
+	</div>
+	<script type="text/javascript">
+	  $(document).ready( function() {
+	    $("#3d").interactive_3d({
+	      frames: 8,
+	      entrance: false,
+	      autoPlay: 45
+	    });
+	  });
+  	</script>
+		
+	</body>
+</html>
